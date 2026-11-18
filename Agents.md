@@ -1,6 +1,10 @@
 About: Small app where employees raise IT support tickets and support staff update the status.
 Stack: FastAPI (Python), SQLite, React
-Build / test: [fill after setup: backend run, pytest, frontend run]
+Build / test:
+- Backend run: `cd backend && .venv\Scripts\uvicorn app.main:app --reload --port 8000`
+- Pytest: `cd backend && .venv\Scripts\pytest -v`
+- Frontend run: `cd frontend && npm run dev`
+- Frontend build: `cd frontend && npm run build`
 
 Rules:
 - Only support staff can change a ticket's status
